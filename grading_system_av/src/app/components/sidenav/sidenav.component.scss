@@ -1,0 +1,35 @@
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#profile {
+    top: 150px;
+    background-color: aqua;
+}
+
+#dashboard {
+    top: 230px;
+    background-color: aqua;
+}
+
+#usermanagement {
+    top: 300px;
+    background-color: aqua;
+}
+
+#setting {
+    bottom: 20px;
+    background-color: aqua;
+}
