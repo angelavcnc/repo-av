@@ -5,11 +5,13 @@ export const card_data = [
         content: "List of Students"
     },
 
+
     {
         Title : "Teachers",
         value : 200,
         content: "List of Teachers"
     },
+
 
     {
         Title : "Subjects",
@@ -17,9 +19,11 @@ export const card_data = [
         content: "List of Subjects"
     },
 
+
     {
         Title: "Profile",
         value : 200,
         content: "Go to user profile"
     }
+    
 ]
