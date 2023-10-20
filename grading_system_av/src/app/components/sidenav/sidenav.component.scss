@@ -1,35 +1,28 @@
-#mySidenav a {
-    position: absolute;
-    left: -80px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 13px;
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(111, 189, 189);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
     color: black;
-    border-radius: 0 5px 5px 0;
+    padding: 16px;
+    text-decoration: none;
 }
 
-#mySidenav a:hover {
-    left: 0;
+.sidebar a.active {
+    background-color: gray;
+    color: whitesmoke;
 }
 
-#profile {
-    top: 150px;
-    background-color: aqua;
+.sidebar a:hover:not(.active) {
+    background-color: pink;
+    color: whitesmoke;
 }
 
-#dashboard {
-    top: 230px;
-    background-color: aqua;
-}
 
-#usermanagement {
-    top: 300px;
-    background-color: aqua;
-}
-
-#setting {
-    bottom: 20px;
-    background-color: aqua;
-}

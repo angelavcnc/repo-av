@@ -1,52 +1,46 @@
-<!DOCTYPE html>
-<html>
-    <head>  </head>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
     <body>
-        <div class="split-screen">
-            <div class="left">
-                <Section class="copy">
-                    <h1>Explore</h1>
-                    <p>Over 1000 students</p>
-                </Section>
-            </div>
-            <div class="right">
-                <form>
-                    <section class="copy">
-                        <h2>Sign Up</h2>
-                        <div class="login-container">
-                            <p>Already have an account?<a href="#">
-                                <strong>Log In</strong></a></p>
-                        </div>
-                    </section>
-                    <div class="input-container name">
-                        <label for="fname">Full Name</label>
-                        <input id="fname" name="fname" type="text">
+        <div class="container">
+            <div class="title">Registration</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required>
                     </div>
-                    <div class="input-container email">
-                        <label for="fname">Email</label>
-                        <input id="email" name="email" type="text">
+
+                    <div class="input-box">
+                        <span class="details">UserName</span>
+                        <input type="text" placeholder="Enter your username" required>
+                    </div>/
+
+
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required>
                     </div>
-                    <div class="input-container password">
-                        <label for="password">Password</label>
-                        <input id="password" name="password" 
-                        placeholder="Must be at least 6 characters"
-                        type="password">
-                        <i class="far fa-eye-slash"></i>
+
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="text" placeholder="Enter your password" required>
                     </div>
-                    <div class="input-container cta">
-                        <label class="checkbox-container">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                        Sign up for email updates
-                        </label>
+
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="text" placeholder="Confirm your password" required>
                     </div>
-                    <button class="signup-btn" type="submit">Sign Up</button>
-                    <section class="copy legal"></section>
-                    <p><span class="small">By continuing, you agree to accept our <br> 
-                    <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of Service</a>.</span></p>
-                </form>
-            </div>
+
+                    <div class="button">
+                        <input type="submit" value="Register">
+                    </div>
+                </div>
+            </form>
         </div>
     </body>
 </html>

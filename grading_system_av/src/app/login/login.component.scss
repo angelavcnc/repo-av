@@ -1,43 +1,105 @@
-.body {
+* {
     margin: 0;
     padding: 0;
-    background: #6a6a6a;
-    font-family: 'Arial';
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.login {
-    width: 382px;
-    overflow: hidden;
-    margin: auto;
-    margin: 20 0 0 450px;
-    padding: 80px;
-    background: #23463f;
-    border-radius: 15px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(126,34,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
-.h2 {
+.login-box {
+    position: relative;
+    width: 400px;
+    /* background: gray; */
+}
+
+.login-box form {
+    width: 100%;
+    padding: 0 50px;
+}
+
+h2 {
+    font-size: 2em;
     text-align: center;
-    color: #277582;
-    padding: 20px;
 }
 
-.label {
-    color: #08ffd1;
-    font-size: 17px;
+.input-box {
+    position: relative;
+    margin: 25px 0;
 }
 
-.Uname {
-    width: 300px;
-    height: 30px;
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 40px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 1px;
+    font-size: .8em;
+}
+
+.forgot-pass {
+    margin: -15px 0 10px;
+    text-align: center;
+}
+
+.forgot-pass a {
+    font-size: .85em;
+    color: #Fff;
+    text-decoration: none;
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(0deg, rgba(126,34,195,1) 0%, rgba(253,187,45,1) 100%);
     border: none;
-    border-radius: 3px;
-    padding-left: 8px;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #1f293a;
+    font-weight: 600;
 }
 
-.Pass {
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
+.signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.signup-link a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
 }
